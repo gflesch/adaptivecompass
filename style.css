@@ -42,7 +42,7 @@
   color: rgb(51, 51, 51);
   max-width: 320px;
   width: 32px;
-  height: 19px;
+  height: 18px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -497,7 +497,7 @@
   top: 350px;
 }
 
-#divApplab.appModern #TLTLa {
+#divApplab.appModern #BLTLa {
   width: 130px;
   background-color: rgb(175, 0, 0);
   left: 35px;
@@ -511,21 +511,21 @@
   top: 350px;
 }
 
-#divApplab.appModern #BLTLa {
+#divApplab.appModern #TLTLa {
   width: 120px;
   background-color: rgb(0, 175, 10);
   left: 165px;
   top: 350px;
 }
 
-#divApplab.appModern #BRBLa {
+#divApplab.appModern #TRBLa {
   width: 130px;
   background-color: rgb(175, 0, 0);
   left: 35px;
   top: 350px;
 }
 
-#divApplab.appModern #TRBLa {
+#divApplab.appModern #BRBLa {
   width: 120px;
   background-color: rgb(0, 175, 10);
   left: 165px;
@@ -560,14 +560,14 @@
   top: 350px;
 }
 
-#divApplab.appModern #TLTRa {
+#divApplab.appModern #BLTRa {
   width: 130px;
   background-color: rgb(175, 0, 0);
   left: 35px;
   top: 350px;
 }
 
-#divApplab.appModern #BLTRa {
+#divApplab.appModern #TLTRa {
   width: 120px;
   background-color: rgb(0, 175, 10);
   left: 165px;
@@ -682,6 +682,268 @@
   top: 273px;
 }
 
+#divApplab.appModern #BLBLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BLBRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BLTLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BLTRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BRBLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BRBRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BRTLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #BRTRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TLBLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TLBRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TLTLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TLTRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TRBLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TRBRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TRTLi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TRTRi {
+  height: 250px;
+  width: 250px;
+  left: 35px;
+  top: 15px;
+}
+
+#divApplab.appModern #TRTRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BRTRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TLTRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TRBRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BRBRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TLBRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BLBRq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TRTLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BRTLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TLTLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BLTLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BRBLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TRBLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #BLBLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
+#divApplab.appModern #TLBLq {
+  width: 250px;
+  height: 70px;
+  font-size: 12px;
+  background-color: rgb(249, 249, 249);
+  text-align: left;
+  left: 35px;
+  top: 273px;
+}
+
 #divApplab.appModern #testResults {
   background-size: 320px 450px;
   background-image: url("https://studio.code.org/blockly/media/1x1.gif");
@@ -709,6 +971,7 @@
 
 #divApplab.appModern #label1 {
   width: 64px;
+  height: 19px;
   top: 20px;
 }
 
@@ -719,6 +982,7 @@
 
 #divApplab.appModern #label2 {
   width: 55px;
+  height: 19px;
   top: 20px;
   left: 75px;
 }
@@ -741,6 +1005,7 @@
 
 #divApplab.appModern #label5 {
   width: 42px;
+  height: 19px;
   left: 266px;
   top: 20px;
 }
@@ -776,6 +1041,7 @@
 
 #divApplab.appModern #label6 {
   width: 50px;
+  height: 19px;
   top: 21px;
   left: 143px;
 }
@@ -798,6 +1064,7 @@
 
 #divApplab.appModern #label8 {
   width: 53px;
+  height: 19px;
   left: 203px;
   top: 20px;
 }
