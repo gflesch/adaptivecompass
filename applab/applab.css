@@ -60,17 +60,12 @@ html[dir='rtl'] #visualizationColumn {
   left: 0px;
   overflow: visible; }
 
-#visualizationColumn.centered_embed {
-  margin: 0 auto; }
-
 #visualizationColumn.pin_bottom {
   position: absolute;
   bottom: 0px; }
   #visualizationColumn.pin_bottom #belowVisualization {
     position: absolute;
     overflow: auto; }
-  #visualizationColumn.pin_bottom.centered_embed {
-    position: relative; }
 
 div.droplet-palette-group-header {
   font-family: "Gotham 4r", sans-serif, sans-serif;
@@ -179,100 +174,6 @@ button.arrow:disabled {
   border: 1px solid #C7C7C7;
   background-color: #C7C7C7; }
 
-#studio-dpad {
-  width: 390px;
-  vertical-align: top;
-  margin-left: 10px;
-  -webkit-touch-callout: none; }
-
-#studio-dpad-rim {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border: 76px solid #FFFFFF;
-  border-radius: 76px;
-  box-shadow: 1px 1px 1px 0 #7F7F7F; }
-
-#studio-dpad-cone {
-  position: absolute;
-  margin: 2px;
-  width: 0px;
-  height: 0px;
-  border: 74px solid #9C9C9C;
-  border-radius: 74px; }
-  #studio-dpad-cone.left {
-    border-top-color: #FFD080;
-    transform: rotate(270deg); }
-    #studio-dpad-cone.left.down {
-      transform: rotate(225deg); }
-    #studio-dpad-cone.left.up {
-      transform: rotate(315deg); }
-  #studio-dpad-cone.right {
-    border-top-color: #FFD080;
-    transform: rotate(90deg); }
-    #studio-dpad-cone.right.down {
-      transform: rotate(135deg); }
-    #studio-dpad-cone.right.up {
-      transform: rotate(45deg); }
-  #studio-dpad-cone.up {
-    border-top-color: #FFD080;
-    transform: rotate(0deg); }
-  #studio-dpad-cone.down {
-    border-top-color: #FFD080;
-    transform: rotate(180deg); }
-
-#studio-dpad-button {
-  display: inline;
-  position: relative;
-  border-radius: 40px;
-  width: 80px;
-  height: 80px;
-  margin: 36px 5px 5px 36px;
-  border: 1px solid #EFEFEF;
-  background-color: #FFFFFF;
-  box-shadow: 1px 1px 1px 0 #7F7F7F; }
-  #studio-dpad-button.active {
-    border: 1px solid #9F9F9F;
-    box-shadow: none; }
-  #studio-dpad-button.left {
-    left: -17px; }
-    #studio-dpad-button.left.up {
-      left: -12px;
-      top: -12px; }
-    #studio-dpad-button.left.down {
-      left: -12px;
-      top: 12px; }
-  #studio-dpad-button.right {
-    left: 17px; }
-    #studio-dpad-button.right.up {
-      left: 12px;
-      top: -12px; }
-    #studio-dpad-button.right.down {
-      left: 12px;
-      top: 12px; }
-  #studio-dpad-button.up {
-    top: -17px; }
-  #studio-dpad-button.down {
-    top: 17px; }
-
-#studio-space-button {
-  position: absolute;
-  border-radius: 40px;
-  width: 80px;
-  height: 80px;
-  right: 10px;
-  border-color: #666666;
-  background-color: #FFA000;
-  box-shadow: inset 1px 1px 0px 0 #FFD07F; }
-  #studio-space-button.active {
-    border-radius: 39px;
-    width: 78px;
-    height: 78px;
-    margin-right: 6px;
-    margin-top: 6px; }
-  #studio-space-button:focus {
-    outline: 0; }
-
 #soft-buttons {
   display: inline-block;
   vertical-align: top;
@@ -348,9 +249,15 @@ html[dir='rtl'] .editor-column {
   z-index: 3; }
 
 .ace_gutter-cell.ace_breakpoint, .droplet-gutter-line.droplet_breakpoint {
-  border-radius: 15px 0px 0px 15px;
-  box-shadow: 0px 0px 0px 40px rgba(0, 0, 255, 0.5) inset;
+  background-image: url("assets/blockly/media/common_images/gutterPause.png");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  border-radius: 15px 0 0 15px;
+  background-color: rgba(0, 0, 255, 0.5);
   color: white; }
+
+.droplet-gutter-line.droplet_breakpoint {
+  background-position: 4px 4px; }
 
 .ace_gutter-cell.ace_error, .droplet-gutter-line.droplet_error {
   background-image: url("assets/blockly/media/common_images/gutterError.png");
@@ -366,7 +273,10 @@ html[dir='rtl'] .editor-column {
   background-repeat: no-repeat; }
 
 .ace_gutter-cell.ace_error, .ace_gutter-cell.ace_warning {
-  background-position: 2px 0px; }
+  background-position: 2px 0; }
+
+.droplet-gutter-line.droplet_warning {
+  background-position: 2px 2px; }
 
 #visualizationResizeBar {
   position: absolute;
@@ -397,6 +307,8 @@ html[dir='rtl'] div#visualizationResizeBar {
   stroke: black;
   stroke-width: 1;
   cursor: default; }
+  html[dir='RTL'] .karel-counter-text {
+    text-anchor: start; }
 
 /* Shrink the visualization area on small displays. */
 #visualization.responsive > * {
@@ -1091,16 +1003,16 @@ html[dir="RTL"] .prompt-icon-cell {
 
 .generated-code-container {
   margin-top: 10px; }
-  .generated-code-container .generatedCodeMessage {
+  .generated-code-container .generatedCodeMessage p {
     font-size: 14px;
     line-height: inherit;
     color: #5b6770;
     margin-bottom: 10px; }
-    .generated-code-container .generatedCodeMessage a {
+    .generated-code-container .generatedCodeMessage p a {
       font-family: "Gotham 7r", sans-serif;
       font-weight: normal;
       color: #7665a0; }
-      .generated-code-container .generatedCodeMessage a:hover {
+      .generated-code-container .generatedCodeMessage p a:hover {
         text-decoration: underline; }
   .generated-code-container .generatedCode {
     font-size: 14px;
@@ -1444,8 +1356,6 @@ a.WireframeButtons_active, div.WireframeButtons_active {
     left: 0;
     right: 0;
     width: auto !important; }
-  .legacy-share-view #studio-dpad-container {
-    margin-top: -24px; }
   .legacy-share-view #more-menu, .legacy-share-view #copyright-flyout {
     border-top: solid thin #202b34;
     left: 0;
@@ -1458,6 +1368,10 @@ a.WireframeButtons_active, div.WireframeButtons_active {
 
 .embedded_iframe #visualizationColumn.wireframeShare {
   padding: 0; }
+
+#manageAssetsModal {
+  width: 800px;
+  margin-left: -400px; }
 
 #rotateContainer {
   display: none; }
@@ -1724,13 +1638,15 @@ a.WireframeButtons_active, div.WireframeButtons_active {
     border-radius: 0;
     padding: 0 30px 0 10px;
     color: #fff;
-    background: url("assets/blockly/media/applab/dropdown.png") no-repeat center right;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
     padding-right: 0\9;
     background: transparent\9; }
     #divApplab.appModern select::-ms-expand, #designModeViz.appModern select::-ms-expand, .draggingParent select::-ms-expand {
       display: none; }
     #divApplab.appModern select:hover, #designModeViz.appModern select:hover, .draggingParent select:hover {
-      background: url("assets/blockly/media/applab/dropdown.png") no-repeat center right, url("assets/blockly/media/applab/brighter.png"); }
+      filter: opacity(0.8); }
   #divApplab.appModern button, #divApplab.appModern select, #divApplab.appModern input, #divApplab.appModern .textArea, #designModeViz.appModern button, #designModeViz.appModern select, #designModeViz.appModern input, #designModeViz.appModern .textArea, .draggingParent button, .draggingParent select, .draggingParent input, .draggingParent .textArea {
     outline: 0; }
   #divApplab.appModern img[data-canonical-image-url=''], #designModeViz.appModern img[data-canonical-image-url=''], .draggingParent img[data-canonical-image-url=''] {
@@ -1738,8 +1654,10 @@ a.WireframeButtons_active, div.WireframeButtons_active {
   #divApplab.appModern .screen, #designModeViz.appModern .screen, .draggingParent .screen {
     outline: 0; }
 
+_:-ms-fullscreen select, :root #divApplab.appModern select, #designModeViz.appModern select, .draggingParent select {
+  background-position-x: right -35px; }
+
 #divApplab.notRunning img[data-canonical-image-url=''], #divApplab.notRunning canvas:not(#turtleCanvas), #divApplab.notRunning .chart, #designModeViz.appModern img[data-canonical-image-url=''], #designModeViz.appModern canvas:not(#turtleCanvas), #designModeViz.appModern .chart, .draggingParent img[data-canonical-image-url=''], .draggingParent canvas:not(#turtleCanvas), .draggingParent .chart {
-  border: 5px solid #fff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   outline: 1px solid #bdc3c7;
@@ -2057,10 +1975,6 @@ div#visualizationResizeBar {
   border-color: #a69bc1;
   background-color: #a69bc1;
   color: white; }
-
-#manageAssetsModal {
-  width: 800px;
-  margin-left: -400px; }
 
 .assetRow {
   border-bottom: 1px solid #999; }
